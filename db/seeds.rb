@@ -21,7 +21,7 @@ joe = User.create(email: "joe@email.com", password: "123456")
 # #Comfy Pants
 item1 = Item.create(name: "Lands End Sweatpants", category: "Pants", style: "Comfy", price: 31.45, brand: "Lands' End", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRzyBtlhOUXv3pcRA1F1ZvFSIy90NKEgqU6yQgb_ZyTpm2cWq5hfBmYFgNBNRSyi9vAqvDYCis66Y7rAITaSOgtx5r1txclbL3VgceI13KHf_PDB4d9XrWG&usqp=CAE", size: "L")
 item2 = Item.create(name: "Champion Mens Sweatpants", category: "Pants", style: "Comfy", price: 19.00, brand: "Champion", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRTwFGm57Fcv2ynKVJ-G5AH0enQ_lOvZijbkHP0MUyx45SIXkIBVreonPWsm1qMH3wXbRLdin34k2mtdUedn_LGxlf0UWyB2sQzPZTdhuKZ&usqp=CAE", size: "M")
-item3 = Item.create(name: "Nike Sportswear Club Fleece Plants", category: "Pants", style: "Comfy", price: 10.00, brand: "Nike", image: "https://media.kohlsimg.com/is/image/kohls/3583188_Black_White?wid=600&hei=600&op_sharpen=1g", size: "XL")
+item3 = Item.create(name: "Nike Sportswear Club Fleece Plants", category: "Pants", style: "Comfy", price: 10.00, brand: "Nike", image: "https://media.kohlsimg.com/is/image/kohls/3583242_Charcoal_Heather_White?wid=1200&hei=1200&op_sharpen=1", size: "XL")
 item4 = Item.create(name: "Nike NSW Joggers Sustainable", category: "Pants", style: "Comfy", price: 49.99, brand: "Nike", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTEqe1-81fxC5BypMOsZ_LZYzGBUFKiUT6oN4mXOb554DFJuojeiQPJKG7sVxVQNuxPyz_oXVlU8E7-WZ2Lj-R1p6I6IFEJR0czPrxqM_xaUTBps6cZMD32qg&usqp=CAE", size: "S")
 item5 = Item.create(name: "Nike Mens Club Jogger", category: "Pants", style: "Comfy", price: 45.99, brand: "Nike", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTsuIvQHdXJLDjdLPAWAv5zoINvyVqxR0sOq8zd3p3SmBl50Ic9rwjaonDq8LcjERFdKQkRM6aqaYgp3w2znnKmvBQh1A-zUfjJOAJk6DaIlTB0SFq4ffEr2Q&usqp=CAE", size: "L")
 
@@ -54,7 +54,7 @@ item18 = Item.create(name: "Slim Supersoft Long Sleeve Henly", category: "Shirt"
 # # Order
 order1 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: false)
 order2 = Order.create(user_id: joe.id, date: 2021-02-03, checked_out: false)
-
+order3 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: false)
 # # Review
 review1 = Review.create(comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", user_id: conor.id, item_id: item1.id)
 review2 = Review.create(comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", user_id: conor.id, item_id: item2.id)
@@ -64,3 +64,9 @@ review4 = Review.create(comment: "Lorem ipsum dolor sit amet, consectetur adipis
 # # ItemOrder
 item_order1 = ItemOrder.create(order_id: order1.id , item_id: item1.id)
 item_order2 = ItemOrder.create(order_id: order2.id, item_id: item2.id)
+item_order3 = ItemOrder.create(order_id: order1.id, item_id: item15.id)
+item_order4 = ItemOrder.create(order_id: order1.id, item_id: item16.id)
+item_order5 = ItemOrder.create(order_id: order1.id, item_id: item17.id)
+item_order6 = ItemOrder.create(order_id: order2.id, item_id: item15.id)
+item_order7 = ItemOrder.create(order_id: order2.id, item_id: item12.id)
+item_order8 = ItemOrder.create(order_id: order3.id, item_id: item15.id)

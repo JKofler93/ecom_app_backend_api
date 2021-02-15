@@ -2,7 +2,9 @@ class UsersController < ApplicationController
 
     def index 
         users = User.all 
-        render json: users, :except => [:created_at, :updated_at]
+        render json: users, :include => {
+            :item_orders => {:except => [:created_at, :updated_at]}
+        }, :except => [:created_at, :updated_at]
     end 
 
     def new 
