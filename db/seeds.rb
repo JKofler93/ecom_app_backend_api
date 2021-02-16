@@ -20,7 +20,7 @@ joe = User.create(email: "joe@email.com", password: "123456")
 
 # #Comfy Pants
 item1 = Item.create(name: "Lands End Sweatpants", category: "Pants", style: "Comfy", price: 31.45, brand: "Lands' End", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRzyBtlhOUXv3pcRA1F1ZvFSIy90NKEgqU6yQgb_ZyTpm2cWq5hfBmYFgNBNRSyi9vAqvDYCis66Y7rAITaSOgtx5r1txclbL3VgceI13KHf_PDB4d9XrWG&usqp=CAE", size: "L")
-item2 = Item.create(name: "Champion Mens Sweatpants", category: "Pants", style: "Comfy", price: 19.00, brand: "Champion", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRTwFGm57Fcv2ynKVJ-G5AH0enQ_lOvZijbkHP0MUyx45SIXkIBVreonPWsm1qMH3wXbRLdin34k2mtdUedn_LGxlf0UWyB2sQzPZTdhuKZ&usqp=CAE", size: "M")
+item2 = Item.create(name: "Champion Mens SweatPants", category: "Pants", style: "Comfy", price: 19.00, brand: "Champion", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRTwFGm57Fcv2ynKVJ-G5AH0enQ_lOvZijbkHP0MUyx45SIXkIBVreonPWsm1qMH3wXbRLdin34k2mtdUedn_LGxlf0UWyB2sQzPZTdhuKZ&usqp=CAE", size: "M")
 item3 = Item.create(name: "Nike Sportswear Club Fleece Plants", category: "Pants", style: "Comfy", price: 10.00, brand: "Nike", image: "https://media.kohlsimg.com/is/image/kohls/3583242_Charcoal_Heather_White?wid=1200&hei=1200&op_sharpen=1", size: "XL")
 item4 = Item.create(name: "Nike NSW Joggers Sustainable", category: "Pants", style: "Comfy", price: 49.99, brand: "Nike", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTEqe1-81fxC5BypMOsZ_LZYzGBUFKiUT6oN4mXOb554DFJuojeiQPJKG7sVxVQNuxPyz_oXVlU8E7-WZ2Lj-R1p6I6IFEJR0czPrxqM_xaUTBps6cZMD32qg&usqp=CAE", size: "S")
 item5 = Item.create(name: "Nike Mens Club Jogger", category: "Pants", style: "Comfy", price: 45.99, brand: "Nike", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTsuIvQHdXJLDjdLPAWAv5zoINvyVqxR0sOq8zd3p3SmBl50Ic9rwjaonDq8LcjERFdKQkRM6aqaYgp3w2znnKmvBQh1A-zUfjJOAJk6DaIlTB0SFq4ffEr2Q&usqp=CAE", size: "L")
@@ -38,23 +38,23 @@ item12 = Item.create(name: "Athletic-Fit Flex Khaki", category: "Pants", style: 
 
 
 # # T Shirts- Short/Long Sleeve
-item13 = Item.create(name: "Soft Wash Crew Neck", category: "Shirt", style: "Short Sleeve", price: 29.99, brand: "Banana Republic", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTqemuvMJWybccE6ZQ4DMUfFheQxwckm4a4_9z5IdCtwC5SeQBKxe5zX25_OPhOTFn_iV97Q3Z4oSPw5-FYfKjx37yLvwXNKQZjj2uKRtwRG_DQdguvbG2SCw&usqp=CAE", size: "XL")
-item14 = Item.create(name: "Coors Golden Colorado Tee", category: "Shirt", style: "Short Sleeve", price: 18.99, brand: "Urban Outfitters", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS_yGr64UffEH9WsF2PUmxlecaChkGlpyLl_HX7w9AnufEGml7snx4ncxKOfDhbfCPrLTZdoPiMRvYlJCKi-XdnM41lPl-r0w4lEi64E75CoXTxic-yLEo7cw&usqp=CAE", size: "L")
-item15 = Item.create(name: "Pacsun Mens Arizon T Shirt", category: "Shirt", style: "Short Sleeve", price: 25.99, brand: "Pacsun", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRP3b3RacLFOCQx6l_XWDJeiqE9TxCKR12tPuuBGUfQTu6JFOZz0uHlYxqkyZGLS2ow2vWZLGllh0m5zjPsCvOMmR9PtEh0HHi4K34WihnEq38esAquGAZq&usqp=CAE", size: "L")
+item13 = Item.create(name: "Soft Wash Crew Neck", category: "Shirts", style: "Short Sleeve", price: 29.99, brand: "Banana Republic", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTqemuvMJWybccE6ZQ4DMUfFheQxwckm4a4_9z5IdCtwC5SeQBKxe5zX25_OPhOTFn_iV97Q3Z4oSPw5-FYfKjx37yLvwXNKQZjj2uKRtwRG_DQdguvbG2SCw&usqp=CAE", size: "XL")
+item14 = Item.create(name: "Coors Golden Colorado Tee", category: "Shirts", style: "Short Sleeve", price: 18.99, brand: "Urban Outfitters", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS_yGr64UffEH9WsF2PUmxlecaChkGlpyLl_HX7w9AnufEGml7snx4ncxKOfDhbfCPrLTZdoPiMRvYlJCKi-XdnM41lPl-r0w4lEi64E75CoXTxic-yLEo7cw&usqp=CAE", size: "L")
+item15 = Item.create(name: "Pacsun Mens Arizon T Shirts", category: "Shirts", style: "Short Sleeve", price: 25.99, brand: "Pacsun", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRP3b3RacLFOCQx6l_XWDJeiqE9TxCKR12tPuuBGUfQTu6JFOZz0uHlYxqkyZGLS2ow2vWZLGllh0m5zjPsCvOMmR9PtEh0HHi4K34WihnEq38esAquGAZq&usqp=CAE", size: "L")
 
-item16 = Item.create(name: "Untuckit Ultrasoft Long Sleeve", category: "Shirt", style: "Long Sleeve", price: 32.99, brand: "UNTUCKit", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYrng3aU9rXDHxBLZCyaVzb89C76t0LUXmw1QXIypQ8KgnLFMJN1aOP4M19_JAzlMYi12mbtMNyFhuMtmUM6TMIvvlf1NQOB1IQnRiursbha2mX-dfJ_u0HQ&usqp=CAE", size: "L")
-item17 = Item.create(name: "Men's Organic Cotton Long Sleeve", category: "Shirt", style: "Long Sleeve", price: 45.99, brand: "Banana Republic", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT7qCzxEEoXqQTjioU22S5TebaJqaQMbUmqvz51CpMHx8vYWO5uzzdQ8j3NHai6GvN3wWuL05WZdp_UIfGcJnzQI22mz5XrjiOH4k74sO0hHLWkOUaR4U1i&usqp=CAE", size: "M")
-item18 = Item.create(name: "Slim Supersoft Long Sleeve Henly", category: "Shirt", style: "Long Sleeve", price: 23.99, brand: "Express", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRn-ZtwF_VvBOBJUnsCq-jrXWJdmpNsYAOyjvRp4HxH0w2W-mNjTpCkGLUYwR9nyTjsPonI2dpGqHyzmWmWItwe9yG1COOIHQ1W0QbF8RkaietJK1QrmGem&usqp=CAE", size: "L")
+item16 = Item.create(name: "Untuckit Ultrasoft Long Sleeve", category: "Shirts", style: "Long Sleeve", price: 32.99, brand: "UNTUCKit", image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSYrng3aU9rXDHxBLZCyaVzb89C76t0LUXmw1QXIypQ8KgnLFMJN1aOP4M19_JAzlMYi12mbtMNyFhuMtmUM6TMIvvlf1NQOB1IQnRiursbha2mX-dfJ_u0HQ&usqp=CAE", size: "L")
+item17 = Item.create(name: "Men's Organic Cotton Long Sleeve", category: "Shirts", style: "Long Sleeve", price: 45.99, brand: "Banana Republic", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT7qCzxEEoXqQTjioU22S5TebaJqaQMbUmqvz51CpMHx8vYWO5uzzdQ8j3NHai6GvN3wWuL05WZdp_UIfGcJnzQI22mz5XrjiOH4k74sO0hHLWkOUaR4U1i&usqp=CAE", size: "M")
+item18 = Item.create(name: "Slim Supersoft Long Sleeve Henly", category: "Shirts", style: "Long Sleeve", price: 23.99, brand: "Express", image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRn-ZtwF_VvBOBJUnsCq-jrXWJdmpNsYAOyjvRp4HxH0w2W-mNjTpCkGLUYwR9nyTjsPonI2dpGqHyzmWmWItwe9yG1COOIHQ1W0QbF8RkaietJK1QrmGem&usqp=CAE", size: "L")
 
 # # Shoes/Sneakers
 
-
+item19 = Item.create(name: "All Birds Tree Runners", category: "Shoes", style: "Sneaker", price: 99.99, brand: "AllBird", image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1200,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.shopify.com/s/files/1/1104/4168/products/Allbirds_WL_RN_SF_PDP_Natural_Grey_BTY_10b4c383-7fc6-4b58-8b3f-6d05cef0369c.png?v=1610061677", size: "12")
 
 
 # # Order
 order1 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: false)
 order2 = Order.create(user_id: joe.id, date: 2021-02-03, checked_out: false)
-order3 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: false)
+order3 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: true)
 # # Review
 review1 = Review.create(comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", user_id: conor.id, item_id: item1.id)
 review2 = Review.create(comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", user_id: conor.id, item_id: item2.id)
