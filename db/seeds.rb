@@ -53,7 +53,7 @@ item19 = Item.create(name: "All Birds Tree Runners", category: "Shoes", style: "
 
 # # Order
 order1 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: false)
-order2 = Order.create(user_id: joe.id, date: 2021-02-03, checked_out: false)
+order2 = Order.create(user_id: joe.id, date: 2021-02-03, checked_out: true)
 order3 = Order.create(user_id: conor.id, date: 2021-02-03, checked_out: true)
 # # Review
 review1 = Review.create(comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", user_id: conor.id, item_id: item1.id)
