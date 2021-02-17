@@ -14,4 +14,28 @@ class ItemOrdersController < ApplicationController
 
 #    }, :except => [:created_at, :updated_at]
 
+def create 
+    item_order = ItemOrder.create(item_orders_params)
+    render json: item_order
+end 
+
+# def show
+#     item_order = ItemOrder.find_by(id: params['id'])
+#     render json: item_order
+# end 
+
+def delete 
+    item_order = ItemOrder.find_by(params[:id])
+    # console.log(item_order)
+    item_order.destroy! 
+    render json: item_order
+end 
+
+# item_order
+private 
+def item_orders_params
+    params.require(:item_order).permit(:item_id, :order_id)
+    # render json: item_order 
+end 
+
 end
