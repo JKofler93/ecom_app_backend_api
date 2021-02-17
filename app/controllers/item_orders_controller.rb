@@ -16,7 +16,10 @@ class ItemOrdersController < ApplicationController
 
 def create 
     item_order = ItemOrder.create(item_orders_params)
-    render json: item_order
+    render json: item_order, :include => { 
+            :item => {:except => [:created_at, :updated_at]}, 
+            :order => {:except => [:created_at, :updated_at]}
+         },:except => [:created_at, :updated_at]
 end 
 
 # def show
@@ -24,11 +27,11 @@ end
 #     render json: item_order
 # end 
 
-def delete 
-    item_order = ItemOrder.find_by(params[:id])
+def destroy 
+    item_order = ItemOrder.find(params[:id])
     # console.log(item_order)
-    item_order.destroy! 
-    render json: item_order
+    item_order.destroy 
+    render json: {}
 end 
 
 # item_order
