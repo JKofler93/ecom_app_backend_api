@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '2.6.6'
 
 
 gem 'stripe'
@@ -9,6 +9,8 @@ gem 'stripe'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
+# tried adding gem pg
+# gem 'sql'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
