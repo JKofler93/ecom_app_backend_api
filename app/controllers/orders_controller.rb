@@ -1,26 +1,39 @@
 class OrdersController < ApplicationController
 
-    def index 
-        orders = Order.all 
-        render json: orders, :except => [:created_at, :updated_at]
+    def index
+        orders = Order.all
+        render json: orders
     end 
 
-    def update
+    def show
         order = Order.find(params[:id])
-        order.update(orders_params)
         render json: order
     end 
 
-    
     def create
-        order = Order.create!(orders_params)
-        render json: order
+        order = Order.create(order_params)
+
+        if order.valid?
+            render json: order
+        else 
+            render json: {error: "Creating an order failed"}
+        end 
     end 
 
-        private 
-    def orders_params
-        params.require(:order).permit(:user_id, :date, :checked_out)
-        # render json: item_order 
-    end 
+    def update 
+        order = Order.find(params[:id])
+        order.update(order_params)
 
+        if order.valid?
+            render json: order
+        else 
+            render json: {error: "Updating the order did not work"}
+        end 
+    end
+
+    private 
+
+    def order_params
+        params.require(:order).permit(:user_id, :tracking, :paid)
+    end 
 end

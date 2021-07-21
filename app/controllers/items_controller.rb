@@ -2,13 +2,13 @@ class ItemsController < ApplicationController
 
     def index 
         items = Item.all 
-        render json: items, :except => [:created_at, :updated_at]
+        render json: items
     end 
 
-#     render json: users, :include => {
-#         :item_orders => {:except => [:created_at, :updated_at]},
-#         :orders => {:except => [:date]}
+    def show 
+        item = Item.find(params[:id])
+        render json: item
+    end 
 
-#    }, :except => [:created_at, :updated_at]
-
+    
 end

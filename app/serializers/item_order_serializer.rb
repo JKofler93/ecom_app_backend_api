@@ -1,4 +1,4 @@
-class ItemOrdersSerializer < ActiveModel::Serializer
+class ItemOrderSerializer < ActiveModel::Serializer
   attributes :id, :order_id, :item_id
 
   belongs_to :item

@@ -10,41 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_12_155047) do
+ActiveRecord::Schema.define(version: 2021_07_16_070937) do
 
   create_table "item_orders", force: :cascade do |t|
-    t.integer "order_id"
     t.integer "item_id"
+    t.integer "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["item_id"], name: "index_item_orders_on_item_id"
+    t.index ["order_id"], name: "index_item_orders_on_order_id"
   end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "category"
-    t.float "price"
+    t.float "cost"
     t.string "brand"
     t.string "image"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.string "size"
     t.string "style"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "orders", force: :cascade do |t|
+    t.boolean "paid"
+    t.string "tracking"
     t.integer "user_id"
-    t.date "date"
-    t.boolean "checked_out"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "reviews", force: :cascade do |t|
-    t.text "comment"
-    t.integer "user_id"
-    t.integer "item_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
