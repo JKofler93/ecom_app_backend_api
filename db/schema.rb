@@ -24,11 +24,10 @@ ActiveRecord::Schema.define(version: 2021_07_16_070937) do
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "category"
+    t.string "description"
     t.float "cost"
     t.string "brand"
     t.string "image"
-    t.string "size"
-    t.string "style"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
